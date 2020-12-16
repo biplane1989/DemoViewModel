@@ -9,14 +9,43 @@
         android:id="@+id/mainFragment"
         android:name="com.example.demoviewmodel.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_shareFragmentA"
             app:destination="@id/shareFragmentA" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentC"
+            app:destination="@id/fragmentC" />
+        <action
+            android:id="@+id/action_mainFragment_to_savedStateFragment"
+            app:destination="@id/savedStateFragment" />
     </fragment>
     <fragment
         android:id="@+id/shareFragmentA"
         android:name="com.example.demoviewmodel.ShareFragmentA"
         android:label="fragment_share_a"
-        tools:layout="@layout/fragment_share_a" />
+        tools:layout="@layout/fragment_share_a">
+        <action
+            android:id="@+id/action_shareFragmentA_to_sharedFragmentB"
+            app:destination="@id/sharedFragmentB" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedFragmentB"
+        android:name="com.example.demoviewmodel.SharedFragmentB"
+        android:label="fragment_shared_b"
+        tools:layout="@layout/fragment_shared_b" />
+    <fragment
+        android:id="@+id/savedStateFragment"
+        android:name="com.example.demoviewmodel.SavedStateFragment"
+        android:label="fragment_saved_state"
+        tools:layout="@layout/fragment_saved_state" />
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.demoviewmodel.FragmentC"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
 </navigation>

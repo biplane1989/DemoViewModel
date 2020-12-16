@@ -3,30 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0000ff"
-    tools:context=".ShareFragmentA">
+    android:background="#ff0000"
+    tools:context=".SharedFragmentB">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment A"
+        android:text="Fragment B"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/tv_fragment_a"
+        android:id="@+id/tv_fragment_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
         android:layout_gravity="center"
+        android:textColor="#ffffff"
         android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/btn_go_to_fragment_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="50dp"
-        android:text="Go to shared fragment b" />
 
 </FrameLayout>
